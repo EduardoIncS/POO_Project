@@ -10,7 +10,7 @@ const pool = new Pool ({
 
 const createTables = async() => {
     const bookTable =
-    'CREATE TABLE IF NOT EXISTS book (title TEXT, author TEXT, publisher TEXT subject TEXT)';
+    'CREATE TABLE IF NOT EXISTS book (title TEXT, author TEXT, publisher TEXT, subject TEXT)';
     await pool.query(bookTable);
 
     const userTable =
